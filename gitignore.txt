@@ -2,8 +2,9 @@
 Bayesian.egg-info/
 Bayesian/__pycache__/
 
-Rethinking/*
-Rethinking/*/
+Bayesian/Rethinking/*
+Bayesian/Rethinking/*/
+
 # !qq/kspacetoimage/Figures/
 # !qq/kspacetoimage/KSpaceToImage.ipynb
 # !qq/kspacetoimage/__init__.py
