@@ -26,6 +26,7 @@ dependencies = [
     "scipy >= 1.10.1",
     "matplotlib >= 3.7.1",
     "seaborn >= 0.12.2",
+    "arviz >= 0.15.1",
     "daft 0.1.2",
     "causalgraphicalmodels >= 0.0.4"
 ]
