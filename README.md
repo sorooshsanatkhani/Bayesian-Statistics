@@ -34,6 +34,7 @@ tar -xvf Python-3.11.3.tar.xz
 cd Python-3.11.3
 ./configure --enable-optimizations
 make
+OR make -s -j$(nproc)
 make test
 sudo make install
 ```
