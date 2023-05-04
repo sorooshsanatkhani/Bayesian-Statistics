@@ -15,3 +15,33 @@ systemd=true
 default=soroosh
 ```
 Then export the distro and unregister the Ubuntu. Next import the exported distro in a location. Now you have a distro in your specific location.
+### Install new Python:
+
+Removing old Python:
+`sudo apt purge --auto-remove python3
+
+Prerequisites:
+```
+sudo apt update
+sudo apt upgrade -y
+sudo apt install software-properties-common make build-essential gdb lcov pkg-config \
+      libbz2-dev libffi-dev libgdbm-dev libgdbm-compat-dev liblzma-dev \
+      libncurses5-dev libreadline6-dev libsqlite3-dev libssl-dev \
+      lzma lzma-dev tk-dev uuid-dev zlib1g-dev -y
+```
+Installing Python:
+```
+tar -xvf Python-3.11.3.tar.xz
+cd Python-3.11.3
+./configure --enable-optimizations
+make
+make test
+sudo make install
+```
+if pip/pip3 is not installed: `sudo apt install python3-pip -y` then
+```
+pip install --upgrade pip
+pip install --upgrade setuptools
+sudo apt install wget ca-certificates
+sudo apt install gedit -y
+```
