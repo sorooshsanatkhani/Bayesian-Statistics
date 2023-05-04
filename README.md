@@ -25,7 +25,8 @@ Prerequisites:
 sudo apt update
 sudo apt upgrade -y
 sudo apt install software-properties-common make build-essential gdb pkg-config \
-      libffi-dev libgdbm-dev libdb-dev libc6-dev libsqlite3-dev libssl-dev tk-dev -y
+      libffi-dev libgdbm-dev libdb-dev libc6-dev libsqlite3-dev libssl-dev \
+      libncurses-dev libffi-dev liblzma-dev libbz2-dev tk-dev -y
 ```
 Removing old Python:\
 `sudo apt purge --auto-remove python3 -y`
