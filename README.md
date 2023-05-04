@@ -29,7 +29,8 @@ sudo apt install software-properties-common make build-essential gdb lcov pkg-co
       libncurses5-dev libreadline6-dev libsqlite3-dev libssl-dev \
       lzma lzma-dev tk-dev uuid-dev zlib1g-dev -y
 ```
-Installing Python:
+Installing Python:\
+(this can take some time)
 ```
 tar -xvf Python-3.11.3.tar.xz
 cd Python-3.11.3
