@@ -53,3 +53,6 @@ pip3 install --upgrade setuptools
 sudo apt install wget ca-certificates
 sudo apt install gedit -y
 ```
+
+## Install Package
+`pip install --user --editable .`
