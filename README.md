@@ -24,10 +24,8 @@ Prerequisites:
 ```
 sudo apt update
 sudo apt upgrade -y
-sudo apt install software-properties-common make build-essential gdb lcov pkg-config \
-      libbz2-dev libffi-dev libgdbm-dev libgdbm-compat-dev liblzma-dev \
-      libncurses5-dev libreadline6-dev libsqlite3-dev libssl-dev \
-      lzma lzma-dev tk-dev uuid-dev zlib1g-dev -y
+sudo apt install software-properties-common make build-essential gdb lcov pkg-config libreadline-dev \
+      libffi-dev libgdbm-dev libgdbm-compat-dev libdb-dev libc6-dev libsqlite3-dev tk-dev -y
 ```
 Installing Python:\
 (this can take some time)
