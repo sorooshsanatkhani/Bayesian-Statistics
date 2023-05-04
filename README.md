@@ -15,10 +15,18 @@ systemd=true
 default=soroosh
 ```
 Then export the distro and unregister the Ubuntu. Next import the exported distro in a location. Now you have a distro in your specific location.
-### Install new Python:
+### Install CUDA
+https://developer.nvidia.com/cuda-downloads
 
-Removing old Python:
-`sudo apt purge --auto-remove python3
+Add these in .bashrc so the CUDA is in the PATH:
+```
+export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+```
+### Install cuDNN
+https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html
+
+### Install new Python:
 
 Prerequisites:
 ```
@@ -26,21 +34,18 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt install software-properties-common make build-essential gdb pkg-config \
       libffi-dev libgdbm-dev libdb-dev libc6-dev libsqlite3-dev libssl-dev \
-      libncurses-dev libffi-dev liblzma-dev libbz2-dev tk-dev -y
+      libncurses-dev libffi-dev liblzma-dev libbz2-dev libreadline-dev zlib1g \
+      tk-dev -y
 ```
-Removing old Python:\
-`sudo apt purge --auto-remove python3 -y`
-
 Installing Python:\
 (this can take some time)
 ```
 tar -xvf Python-3.11.3.tar.xz
 cd Python-3.11.3
 ./configure --enable-optimizations
-make
-OR make -s -j$(nproc)
-make test
-sudo make install
+make -j $(nproc)
+make test -j $(nproc) /////(This can be ignored)
+sudo make install -j $(nproc)
 ```
 if pip/pip3 is not installed: `sudo apt install python3-pip -y` then
 ```
