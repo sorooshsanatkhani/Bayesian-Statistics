@@ -34,9 +34,11 @@ tar -xvf Python-3.11.3.tar.xz
 cd Python-3.11.3
 ./configure --enable-optimizations
 make -j $(nproc)
-make test -j $(nproc) /////(This can be ignored)
+////// make test -j $(nproc) /////(This can be ignored)
 sudo make install -j $(nproc)
 ```
+Add this to the path: \
+`export PYTHONPATH=/usr/local/lib/python3.11`
 
 ```
 pip3 install --upgrade pip
@@ -72,8 +74,8 @@ pip install -U keras_preprocessing --no-deps
 https://developer.nvidia.com/cuda-downloads \
 Add these in .bashrc so the CUDA is in the PATH:
 ```
-export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export PATH=/usr/local/cuda-12.1/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-12.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
 ### Install cuDNN
 https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html
