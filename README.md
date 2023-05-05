@@ -25,15 +25,6 @@ sudo apt install software-properties-common make build-essential gdb pkg-config 
       libncurses-dev libffi-dev liblzma-dev libbz2-dev libreadline-dev zlib1g \
       tk-dev -y
 ```
-### Install CUDA
-https://developer.nvidia.com/cuda-downloads \
-Add these in .bashrc so the CUDA is in the PATH:
-```
-export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-```
-### Install cuDNN
-https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html
 
 ### Install new Python:
 Installing Python:\
@@ -53,6 +44,44 @@ pip3 install --upgrade setuptools
 sudo apt install wget ca-certificates
 sudo apt install gedit -y
 ```
+### More prerequisites
+Make an requirements.txt file and add these:
+```
+ipykernel
+pytest
+pandas
+numpy
+h5py
+netcdf4
+scipy
+matplotlib
+seaborn
+arviz
+daft
+causalgraphicalmodels
+wheel
+requests
+opt_einsum
+```
+Then install the required packages:
+```
+pip install -U -r requirements.txt
+pip install -U keras_preprocessing --no-deps
+```
+### Install CUDA
+https://developer.nvidia.com/cuda-downloads \
+Add these in .bashrc so the CUDA is in the PATH:
+```
+export PATH=/usr/local/cuda/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+```
+### Install cuDNN
+https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html
+
+Install nccl \
+Install tensorRT \
+Install bazelisk as bazel: \
+https://github.com/bazelbuild/bazelisk
 
 ## Install Package
 `pip install --user --editable .`
