@@ -80,7 +80,6 @@ export LD_LIBRARY_PATH=/usr/local/cuda-12.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRAR
 ### Install cuDNN
 https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html \
 Copy the libraries and header in cuda-12.1 and not just cuda
-
 ### Install nccl
 https://developer.nvidia.com/nccl \
 These will be the paths for nccl
@@ -89,8 +88,11 @@ These will be the paths for nccl
 /usr/lib/x86_64-linux-gnu
 ```
 ### Install tensorRT
-Install bazelisk as bazel: \
-https://github.com/bazelbuild/bazelisk
+https://developer.nvidia.com/tensorrt
+### Install bazelisk
+Install it as bazel: \
+https://github.com/bazelbuild/bazelisk \
+Download the binary file. Rename it to bazel and put it in `/usr/local/bin/`
 
 ## Install Package
 `pip install --user --editable .`
