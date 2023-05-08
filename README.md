@@ -23,28 +23,12 @@ sudo apt upgrade -y
 sudo apt install software-properties-common make build-essential gdb pkg-config \
       libffi-dev libgdbm-dev libdb-dev libc6-dev libsqlite3-dev libssl-dev \
       libncurses-dev libffi-dev liblzma-dev libbz2-dev libreadline-dev zlib1g \
-      tk-dev -y
+      tk-dev python3-dev python3-pip wget ca-certificates gedit -y
 ```
-
-### Install new Python:
-Installing Python:\
-(this can take some time)
-```
-tar -xvf Python-3.11.3.tar.xz
-cd Python-3.11.3
-./configure --enable-optimizations
-make -j $(nproc)
-////// make test -j $(nproc) /////(This can be ignored)
-sudo make install -j $(nproc)
-```
-Add this to the path: \
-`export PYTHONPATH=/usr/local/lib/python3.11`
 
 ```
 pip3 install --upgrade pip
 pip3 install --upgrade setuptools
-sudo apt install wget ca-certificates
-sudo apt install gedit -y
 ```
 ### More prerequisites
 Make an requirements.txt file and add these:
