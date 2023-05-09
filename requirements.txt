@@ -1,14 +1,19 @@
-ipykernel >= 6.22.0
-pytest >= 7.2.2
-tensorflow >= 2.12.0
-tensorflow_probability >= 0.19.0
-pandas >= 2.0.1
-numpy >= 1.23.5
-h5py >= 3.8.0
-netcdf4 >= 1.6.3
-scipy >= 1.10.1
-matplotlib >= 3.7.1
-seaborn >= 0.12.2
-arviz >= 0.15.1
-daft >= 0.1.2
-causalgraphicalmodels >= 0.0.4
+pip
+setuptools
+ipykernel
+pytest
+pandas
+numpy
+h5py
+netcdf4
+scipy
+matplotlib
+seaborn
+arviz
+daft
+causalgraphicalmodels
+wheel
+requests
+opt_einsum
+tensorrt
+keras_preprocessing
