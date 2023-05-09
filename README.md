@@ -43,6 +43,7 @@ export PATH=/usr/local/cuda-11.8/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-11.8/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 export TF_MIN_GPU_MULTIPROCESSOR_COUNT=6
 ```
+`. .bashrc`
 ### Install cuDNN
 Download from here: \
 https://developer.nvidia.com/cudnn
