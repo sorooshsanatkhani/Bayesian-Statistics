@@ -44,7 +44,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda-11.8/lib64${LD_LIBRARY_PATH:+:${LD_LIBRAR
 export TF_MIN_GPU_MULTIPROCESSOR_COUNT=6
 ```
 ### Install cuDNN
-Download Tar file from here: \
+Download from here: \
 https://developer.nvidia.com/cudnn
 ```
 tar -xvf cudnn-linux-x86_64-8.*_cuda11-archive.tar.xz
