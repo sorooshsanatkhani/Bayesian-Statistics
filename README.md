@@ -48,6 +48,7 @@ causalgraphicalmodels
 wheel
 requests
 opt_einsum
+tensorrt
 ```
 Then install the required packages:
 ```
@@ -65,8 +66,6 @@ export TF_MIN_GPU_MULTIPROCESSOR_COUNT=4
 ### Install cuDNN
 https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html \
 Copy the libraries and header in cuda-12.1 and not just cuda
-### Install tensorRT
-`python3 -m pip install --upgrade tensorrt`
 ### Install tensorflow
 `pip install tensorflow`
 ## Install Package
