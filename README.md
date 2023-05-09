@@ -60,23 +60,14 @@ Add these in .bashrc so the CUDA is in the PATH:
 ```
 export PATH=/usr/local/cuda-11.8/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-11.8/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export TF_MIN_GPU_MULTIPROCESSOR_COUNT=4
 ```
 ### Install cuDNN
 https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html \
 Copy the libraries and header in cuda-12.1 and not just cuda
-### Install nccl
-https://developer.nvidia.com/nccl \
-These will be the paths for nccl
-```
-/usr/include
-/usr/lib/x86_64-linux-gnu
-```
 ### Install tensorRT
-https://developer.nvidia.com/tensorrt
-### Install bazelisk
-Install it as bazel: \
-https://github.com/bazelbuild/bazelisk \
-Download the binary file. Rename it to bazel and put it in `/usr/local/bin/`
-
+`python3 -m pip install --upgrade tensorrt`
+### Install tensorflow
+`pip install tensorflow`
 ## Install Package
 `pip install --user --editable .`
