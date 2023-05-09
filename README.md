@@ -25,38 +25,7 @@ sudo apt install software-properties-common make build-essential gdb pkg-config 
       libncurses-dev libffi-dev liblzma-dev libbz2-dev libreadline-dev zlib1g \
       tk-dev python3-dev python3-pip wget ca-certificates gedit -y
 ```
-Add to path:
-`export PATH=/home/soroosh/.local/bin${PATH:+:${PATH}}`
-
-```
-pip3 install --upgrade pip
-pip3 install --upgrade setuptools
-```
-### More prerequisites
-Make an requirements.txt file and add these:
-```
-ipykernel
-pytest
-pandas
-numpy
-h5py
-netcdf4
-scipy
-matplotlib
-seaborn
-arviz
-daft
-causalgraphicalmodels
-wheel
-requests
-opt_einsum
-tensorrt
-```
-Then install the required packages:
-```
-pip install -U -r requirements.txt
-pip install -U keras_preprocessing --no-deps
-```
+`sudo pip install -U -r requirements.txt`
 ### Install CUDA
 [https://developer.nvidia.com/cuda-downloads](https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=WSL-Ubuntu&target_version=2.0&target_type=deb_local)
 ```
@@ -85,7 +54,7 @@ sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda-11.8/lib64/libcu
 ```
 Copy the libraries and header in cuda-11.8 and not just cuda
 ### Install tensorflow
-`pip install -U keras_preprocessing --no-deps` \
-`pip install -U tensorflow tensorflow_probability`
+`sudo pip install -U keras_preprocessing --no-deps` \
+`sudo pip install -U tensorflow tensorflow_probability`
 ## Install Package
 `pip install --user --editable .`
