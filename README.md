@@ -72,7 +72,7 @@ Add these in .bashrc so the CUDA is in the PATH:
 ```
 export PATH=/usr/local/cuda-11.8/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-11.8/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-export TF_MIN_GPU_MULTIPROCESSOR_COUNT=4
+export TF_MIN_GPU_MULTIPROCESSOR_COUNT=6
 ```
 ### Install cuDNN
 Download Tar file from here: \
@@ -85,6 +85,7 @@ sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda-11.8/lib64/libcu
 ```
 Copy the libraries and header in cuda-11.8 and not just cuda
 ### Install tensorflow
+`pip install -U keras_preprocessing --no-deps` \
 `pip install -U tensorflow tensorflow_probability`
 ## Install Package
 `pip install --user --editable .`
