@@ -55,11 +55,11 @@ pip install -U -r requirements.txt
 pip install -U keras_preprocessing --no-deps
 ```
 ### Install CUDA
-https://developer.nvidia.com/cuda-downloads \
+[https://developer.nvidia.com/cuda-downloads](https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=WSL-Ubuntu&target_version=2.0&target_type=deb_local) \
 Add these in .bashrc so the CUDA is in the PATH:
 ```
-export PATH=/usr/local/cuda-12.1/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-12.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export PATH=/usr/local/cuda-11.8/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-11.8/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
 ### Install cuDNN
 https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html \
