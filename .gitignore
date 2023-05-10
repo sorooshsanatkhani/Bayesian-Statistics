@@ -1,11 +1,8 @@
 # User-specific directories
 
-Bayesian.egg-info/
-
-#Bayesian/__pycache__/
-
-Bayesian/Rethinking/*
-Bayesian/Rethinking/*/
+*
+*/
+#!Bayesian/Rethinking/Rethinking_Ch03.ipynb
 
 # !qq/kspacetoimage/Figures/
 # !qq/kspacetoimage/KSpaceToImage.ipynb
