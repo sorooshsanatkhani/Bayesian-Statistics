@@ -1,10 +1,10 @@
 # User-specific directories
-*
-!Bayesian
 Bayesian/*
 Bayesian/Rethinking/*
 /Bayesian.egg-info
 
+!Bayesian
+!Bayesian/Rethinking
 !Bayesian/Rethinking/Rethinking_Ch03.ipynb
 !.gitignore
 !Bayesian_workspace.code-workspace
