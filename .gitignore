@@ -1,8 +1,8 @@
 # User-specific directories
 *
-#Bayesian/*
-#Bayesian/Rethinking/*
-#/Bayesian.egg-info
+Bayesian/*
+Bayesian/Rethinking/*
+/Bayesian.egg-info
 
 !Bayesian/Rethinking/Rethinking_Ch03.ipynb
 !.gitignore
