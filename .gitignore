@@ -1,6 +1,6 @@
 # User-specific directories
 *
-Bayesian/*
+#Bayesian/*
 Bayesian/Rethinking/*
 /Bayesian.egg-info
 
