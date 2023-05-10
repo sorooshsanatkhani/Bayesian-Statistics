@@ -26,6 +26,7 @@ sudo apt install software-properties-common make build-essential gdb pkg-config 
       tk-dev python3-dev python3-pip wget ca-certificates gedit -y
 ```
 Add this line in .bashrc: `export PATH="/home/soroosh/.local/bin:$PATH"` \
+Run: `source .bashrc` \
 Then run: 
 `pip install -U -r requirements.txt`
 ### Install CUDA
@@ -45,7 +46,7 @@ export PATH=/usr/local/cuda-11.8/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-11.8/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 export TF_MIN_GPU_MULTIPROCESSOR_COUNT=6
 ```
-Source it: `. .bashrc`
+Source it: `source .bashrc`
 ### Install cuDNN
 Download from here: \
 https://developer.nvidia.com/cudnn
@@ -55,7 +56,8 @@ sudo cp cudnn-*-archive/include/cudnn*.h /usr/local/cuda-11.8/include
 sudo cp -P cudnn-*-archive/lib/libcudnn* /usr/local/cuda-11.8/lib64 
 sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda-11.8/lib64/libcudnn*
 ```
-Copy the libraries and header in cuda-11.8 and not just cuda
+Copy the libraries and header in cuda-11.8 and not just cuda \
+Exit the terminal or restart the WSL.
 ### Install tensorflow
 `pip install -U keras_preprocessing --no-deps` \
 `pip install -U tensorflow tensorflow_probability`
