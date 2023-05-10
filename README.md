@@ -27,7 +27,7 @@ sudo apt install software-properties-common make build-essential gdb pkg-config 
 ```
 Add this line in .bashrc: `export PATH="/home/soroosh/.local/bin:$PATH"` \
 Then run: 
-`sudo python3 -m pip install -U -r requirements.txt`
+`pip install -U -r requirements.txt`
 ### Install CUDA
 [https://developer.nvidia.com/cuda-downloads](https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=WSL-Ubuntu&target_version=2.0&target_type=deb_local)
 ```
@@ -57,7 +57,7 @@ sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda-11.8/lib64/libcu
 ```
 Copy the libraries and header in cuda-11.8 and not just cuda
 ### Install tensorflow
-`sudo python3 -m pip install -U keras_preprocessing --no-deps` \
-`sudo python3 -m pip install -U tensorflow tensorflow_probability`
+`pip install -U keras_preprocessing --no-deps` \
+`pip install -U tensorflow tensorflow_probability`
 ## Install Package
 `pip install --user --editable .`
