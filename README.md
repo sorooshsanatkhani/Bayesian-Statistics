@@ -25,6 +25,8 @@ sudo apt install software-properties-common make build-essential gdb pkg-config 
       libncurses-dev libffi-dev liblzma-dev libbz2-dev libreadline-dev zlib1g \
       tk-dev python3-dev python3-pip wget ca-certificates gedit -y
 ```
+Add this line in .bashrc: `export PATH="/home/soroosh/.local/bin:$PATH"` \
+Then run: 
 `sudo python3 -m pip install -U -r requirements.txt`
 ### Install CUDA
 [https://developer.nvidia.com/cuda-downloads](https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=WSL-Ubuntu&target_version=2.0&target_type=deb_local)
