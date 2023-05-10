@@ -1,9 +1,0 @@
-# User-specific directories
-
-*
-*/
-#!Bayesian/Rethinking/Rethinking_Ch03.ipynb
-
-# !qq/kspacetoimage/Figures/
-# !qq/kspacetoimage/KSpaceToImage.ipynb
-# !qq/kspacetoimage/__init__.py
